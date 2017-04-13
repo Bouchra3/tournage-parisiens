@@ -9,7 +9,7 @@ var map;
                 success: function (reponse){
                     
                     TraitementMaps(reponse);//Une fois qu'il récupère les données => il va appelé le Traitement (Maps)
-                    TraitementGoeloc(reponse);
+                    TraitementGeoloc(reponse);
               }
             })
                      //Traitement Google Maps
@@ -77,7 +77,7 @@ var map;
           }
           
           //Traitement pour la goélocalisation:
-          function TraitementGoeloc(reponse) {
+          function TraitementGeoloc(reponse) {
 
             var infoWindow = new google.maps.InfoWindow({map: map});
 
